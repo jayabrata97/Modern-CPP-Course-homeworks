@@ -26,6 +26,7 @@ int main() {
   adjectives.push_back(adjective);
   cout << "Please enter another adjective: " << endl;
   cin >> another_adjective;
+  cout << " " << endl;
   adjectives.emplace_back(another_adjective);
   const int name_length = name.size();
   const int index = name_length % number_of_adjectives;
