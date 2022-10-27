@@ -11,7 +11,7 @@ int main() {
   int smallest_number = 0;
   int largest_number = 1000000;
   int guessed_number = 0;
-  int count = 0;
+  int count = 1;
   cout << "Welcome to the GUESSING GAME!" << endl;
   cout << "I will generate a number and you will guess it!" << endl;
   cout << "Please provide the smallest number: " << endl;
@@ -21,7 +21,7 @@ int main() {
   std::uniform_int_distribution<int> distribution{smallest_number,
                                                   largest_number};
   int random_number = distribution(random_engine);
-  cout << random_number << endl;
+  // cout << random_number << endl;
   cout << "I've generated a number. Try to guess it!" << endl;
   cout << "Please provide the next guess: ";
   cin >> guessed_number;
